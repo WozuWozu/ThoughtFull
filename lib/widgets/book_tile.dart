@@ -36,6 +36,7 @@ class BookTile extends StatelessWidget {
                       fit: BoxFit.cover,
                       // If the asset path is wrong or missing, don't crash —
                       // fall back to the placeholder tile instead.
+                      cacheWidth: (110 * MediaQuery.of(context).devicePixelRatio).round(),
                       errorBuilder: (context, error, stackTrace) =>
                           _placeholder(theme),
                     )
