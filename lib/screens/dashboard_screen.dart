@@ -7,8 +7,10 @@ import '../theme/theme.dart';
 import '../widgets/app_header_bar.dart';
 import '../widgets/philosopher_row.dart';
 import '../widgets/random_pick_button.dart';
+import '../widgets/mystery_avatar.dart'; // mystery avatar added week 3
 import 'history_screen.dart';
 import 'philosopher_card_screen.dart';
+
 
 /// Screen 2 — Dashboard. Rolls a random philosopher and shows a "Recent"
 /// strip pulled from shared_preferences history.
@@ -87,6 +89,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 textAlign: TextAlign.center,
                 style: theme.textTheme.bodyMedium,
               ),
+              const SizedBox(height: AppSpacing.lg),
+              const MysteryAvatar(),
               const SizedBox(height: AppSpacing.lg),
               RandomPickButton(onPressed: _pickRandom, isLoading: _isPicking),
               const SizedBox(height: AppSpacing.lg),

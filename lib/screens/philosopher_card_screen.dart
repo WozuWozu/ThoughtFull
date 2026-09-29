@@ -99,15 +99,25 @@ class _PortraitBanner extends StatelessWidget {
             Align(
               alignment: Alignment.centerRight,
               child: FractionallySizedBox(
-                widthFactor: 0.65,
+                widthFactor: 0.72,
                 heightFactor: 1,
+                child: ShaderMask(
+                  blendMode: BlendMode.dstIn,
+                  shaderCallback: (rect) => const LinearGradient(
+                    begin: Alignment.centerLeft,
+                    end: Alignment.centerRight,
+                    colors: [Colors.transparent, Colors.black],
+                    stops: [0.0, 0.4],
+                ).createShader(rect),
                 child: Image.asset(
                   philosopher.portraitAsset!,
                   fit: BoxFit.cover,
+                  cacheWidth: (300 * MediaQuery.of(context).devicePixelRatio).round(),
                   errorBuilder: (context, error, stackTrace) =>
                       const SizedBox.shrink(),
-                ),
               ),
+            ),
+          ),
             ),
           // Gradient so the header title text (drawn in AppHeaderBar above)
           // and this banner both stay legible against any portrait.
@@ -118,8 +128,9 @@ class _PortraitBanner extends StatelessWidget {
                 end: Alignment.centerRight,
                 colors: [
                   theme.colorScheme.primary,
-                  theme.colorScheme.primary.withValues(alpha: 0.15),
+                  theme.colorScheme.primary.withValues(alpha: 0.0),
                 ],
+                stops: const [0.0, 0.45]
               ),
             ),
           ),
