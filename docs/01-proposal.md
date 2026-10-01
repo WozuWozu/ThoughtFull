@@ -180,13 +180,11 @@ philosopher/quote/book content ships as static bundled assets.
 
 ## Changes since the last version
 
-- **Week 3** — Added five additional philosophers as per the stretch goal.
 - **Week 2** — Fixed the randomizer so it no longer repeats a philosopher
   already in history (previously an open risk from the midterm proposal).
 - **Week 2** — Sourced and added visual assets (portraits) from Wikimedia
   Commons for the initial philosopher pool.
-- **Week 2** — Completed the "extended pool of 5 philosophers" stretch
-  goal, bringing the total pool past the original 5.
+- **Week 3** — Added an additional five philosophers as per the stretch goal, total is now 10
 - **Week 2** — Abandoned the "extended quote pool" stretch goal for this
   submission due to time constraints; kept in the stretch goals list as
   a known future direction.
