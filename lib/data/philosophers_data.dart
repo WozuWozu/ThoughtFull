@@ -176,4 +176,181 @@ const List<Philosopher> philosopherPool = [
       coverAsset: 'assets/books/kantintroduction.jpg'),
     ],
   ),
+  Philosopher(
+    portraitAsset: 'assets/portraits/rene_descartes.jpg',
+    id: 'descartes',
+    name: 'René Descartes',
+    era: 'FRENCH · 1596–1650',
+    ideology: 'Rationalism',
+    bio:
+        'René Descartes was born in 1596 in La Haye en Touraine, France, and '
+        'is widely called the father of modern philosophy. Educated by '
+        'Jesuits and trained in mathematics, he spent much of his adult life '
+        'in the Dutch Republic, where intellectual freedom let him write '
+        'without interference from the French court or church. In 1649 he '
+        'was invited to Sweden to tutor Queen Christina; the harsh climate '
+        'and her early-morning lesson schedule are widely blamed for the '
+        'illness that killed him there in 1650.',
+    philosophy:
+        'Descartes wanted a foundation for knowledge that no argument could '
+        'shake. His method was radical doubt: reject anything that can be '
+        'doubted, even the existence of the physical world, until you reach '
+        'something certain. What remained was the act of doubting itself — '
+        'the fact that a thinking thing was doing the doubting. From that '
+        'single certainty he tried to rebuild the rest of knowledge, and his '
+        'separate treatment of mind and body still shapes the "mind-body '
+        'problem" debated in philosophy today.',
+    quote: 'I think, therefore I am.',
+    quoteSource: 'Discourse on the Method, 1637.',
+    books: [
+      Book(title: 'Discourse on the Method', author: 'René Descartes',
+      coverAsset: 'assets/books/discourse.jpg'),
+      Book(title: 'Meditations on First Philosophy', author: 'René Descartes',
+      coverAsset: 'assets/books/firstphilosophy.jpg'),
+      Book(title: 'Principles of Philosophy', author: 'René Descartes',
+      coverAsset: 'assets/books/principles.jpg'),
+    ],
+  ),
+  Philosopher(
+    portraitAsset: 'assets/portraits/jean_paul.jpg',
+    id: 'sartre',
+    name: 'Jean-Paul Sartre',
+    era: 'FRENCH · 1905–1980',
+    ideology: 'Existentialism',
+    bio:
+        'Jean-Paul Sartre was born in Paris in 1905 and became the most '
+        'publicly recognizable philosopher of twentieth-century France — a '
+        'novelist, playwright, political activist, and lifelong partner of '
+        'philosopher Simone de Beauvoir. His 1945 public lecture, later '
+        'published as Existentialism Is a Humanism, made his ideas famous '
+        'far beyond academic philosophy. In 1964 he was awarded the Nobel '
+        'Prize in Literature and declined it, saying a writer should not '
+        'allow himself to be turned into an institution.',
+    philosophy:
+        'Sartre\'s existentialism starts from a claim about humans '
+        'specifically: unlike a tool built for a purpose, a person exists '
+        'first and only defines who they are afterward, through their '
+        'choices. There is no human nature handed down in advance to excuse '
+        'a decision. This makes freedom total, but also a kind of burden: '
+        'with no fixed self to fall back on, a person is fully responsible '
+        'for everything they become, and Sartre calls the temptation to '
+        'deny that responsibility "bad faith."',
+    quote: 'Man is condemned to be free.',
+    quoteSource: 'Existentialism Is a Humanism, 1946.',
+    books: [
+      Book(title: 'Being and Nothingness', author: 'Jean-Paul Sartre',
+      coverAsset: 'assets/books/beingandnothing.jpg'),
+      Book(title: 'Nausea', author: 'Jean-Paul Sartre',
+      coverAsset: 'assets/books/nausea.jpg'),
+      Book(title: 'Existentialism Is a Humanism', author: 'Jean-Paul Sartre',
+      coverAsset: 'assets/books/existentialism.jpg'),
+    ],
+  ),
+  Philosopher(
+    portraitAsset: 'assets/portraits/edmund_husserl.jpg',
+    id: 'husserl',
+    name: 'Edmund Husserl',
+    era: 'GERMAN · 1859–1938',
+    ideology: 'Phenomenology',
+    bio:
+        'Edmund Husserl was born in 1859 in Prostějov, in what is now the '
+        'Czech Republic, and trained first as a mathematician before turning '
+        'to philosophy. He taught at Halle, Göttingen, and Freiburg, and is '
+        'credited as the founder of phenomenology, a movement that shaped '
+        'Heidegger, Sartre, and much of twentieth-century continental '
+        'philosophy. Late in life, as a Jewish academic under Nazi rule, he '
+        'was stripped of his library privileges and forced into retirement; '
+        'he died in Freiburg in 1938.',
+    philosophy:
+        'Husserl argued that before philosophy asks what really exists, it '
+        'should carefully describe how things actually show up in '
+        'conscious experience — an orange as it is tasted and seen, not as '
+        'a theory about fruit. He called this bracketing off unproven '
+        'assumptions "epoché," and used it to study the basic structures of '
+        'experience itself: how perception, memory, and imagination each '
+        'present their objects differently. His rallying cry was to return '
+        'to direct description over inherited theory.',
+    quote: 'To the things themselves!',
+    quoteSource: 'Logical Investigations, 1900–1901.',
+    books: [
+      Book(title: 'Logical Investigations', author: 'Edmund Husserl',
+      coverAsset: 'assets/books/logicalinvestigations.jpg'),
+      Book(title: 'Ideas: General Introduction to Pure Phenomenology', author: 'Edmund Husserl',
+      coverAsset: 'assets/books/ideas.jpg'),
+      Book(title: 'Cartesian Meditations', author: 'Edmund Husserl',
+      coverAsset: 'assets/books/cartesian.jpg'),
+    ],
+  ),
+  Philosopher(
+    portraitAsset: 'assets/portraits/emil_cioran.jpg',
+    id: 'cioran',
+    name: 'Emil Cioran',
+    era: 'ROMANIAN-FRENCH · 1911–1995',
+    ideology: 'Philosophical Pessimism',
+    bio:
+        'Emil Cioran was born in 1911 in Rășinari, a village in the '
+        'Carpathian Mountains of Romania, the son of an Orthodox priest. He '
+        'wrote his first books in Romanian before moving to Paris in 1937, '
+        'where he switched permanently to writing in French — a language he '
+        'chose deliberately, later saying the discipline of a non-native '
+        'tongue forced a leaner style onto him. He lived quietly in Paris '
+        'for decades, largely avoiding literary fame, until his death in '
+        '1995.',
+    philosophy:
+        'Cioran wrote almost entirely in aphorisms and short essays rather '
+        'than sustained argument, circling themes of futility, insomnia, '
+        'and the discomfort of simply existing. He is often grouped with '
+        'the existentialists for his subject matter, but rejected their '
+        'systems along with every other system: for Cioran, building a '
+        'philosophy that claims to resolve despair is itself a form of '
+        'self-deception. The lucidity he prized instead means staying with '
+        'the discomfort, unresolved, and finding a dark, sometimes comic '
+        'clarity in that refusal.',
+    quote: 'Chaos is rejecting all you have learned, chaos is being '
+        'yourself.',
+    quoteSource: 'A Short History of Decay, 1949.',
+    books: [
+      Book(title: 'A Short History of Decay', author: 'Emil Cioran',
+      coverAsset: 'assets/books/decay.jpg'),
+      Book(title: 'On the Heights of Despair', author: 'Emil Cioran',
+      coverAsset: 'assets/books/despair.jpg'),
+      Book(title: 'The Trouble with Being Born', author: 'Emil Cioran',
+      coverAsset: 'assets/books/beingborn.jpg'),
+    ],
+  ),
+  Philosopher(
+    portraitAsset: 'assets/portraits/edward_said.jpg',
+    id: 'edward_said',
+    name: 'Edward Said',
+    era: 'PALESTINIAN-AMERICAN · 1935–2003',
+    ideology: 'Postcolonial Theory',
+    bio:
+        'Edward Said was born in Jerusalem in 1935 and educated in Egypt, '
+        'the United States, and at Princeton and Harvard, before spending '
+        'most of his career as a professor of literature at Columbia '
+        'University. Alongside his academic work he was a prominent, '
+        'outspoken advocate for Palestinian rights and a longtime member of '
+        'the Palestinian National Council. He died in New York in 2003 '
+        'after a long illness.',
+    philosophy:
+        'Said\'s best-known book, Orientalism (1978), argued that centuries '
+        'of Western scholarship, art, and literature about "the East" '
+        'weren\'t neutral descriptions but a constructed image — one that '
+        'made the Middle East and Asia seem exotic, backward, or dangerous '
+        'in ways that conveniently justified colonial control. He called '
+        'this constructed image "Orientalism" and treated it as a case '
+        'study in how knowledge and power reinforce each other: who gets '
+        'to describe a culture, he argued, is rarely separate from who gets '
+        'to rule it.',
+    quote: 'Nations themselves are narrations.',
+    quoteSource: 'Culture and Imperialism, 1993.',
+    books: [
+      Book(title: 'Orientalism', author: 'Edward Said',
+      coverAsset: 'assets/books/orientalism.png'),
+      Book(title: 'Culture and Imperialism', author: 'Edward Said',
+      coverAsset: 'assets/books/cultureimperialism.jpg'),
+      Book(title: 'Out of Place: A Memoir', author: 'Edward Said',
+      coverAsset: 'assets/books/outofplace.jpg'),
+    ],
+  ),
 ];
