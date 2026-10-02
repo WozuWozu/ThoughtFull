@@ -119,16 +119,11 @@ Code I Wrote:
 - Going through Information Management (SQL) and a bit of OOP made it easier to understand how to make a datasheet of sorts.
 Philosopher() instance holds that particular philosopher within the philosopherPool list, portraitAsset:
 'assets/portraits/edward_said.jpg', pulls the photo within the asset folder via its string name rather than
-a directory.
-
-There's the named parameters as well you usually see in constructors that being
+a directory. There's the named parameters as well you usually see in constructors that being
 id, name, era and ideology. These strings are basically unique identifiers that let the app
-look up that particular philosopher.
-
-There's also the bio and philosophy sections which are basically split up across lines for formatting reasons
+look up that particular philosopher. There's also the bio and philosophy sections which are basically split up across lines for formatting reasons
 and the usual basics like using \'s to make sure dart recognizes it as the character. There's 2 more string fields
-that being quote and it's source and finally we get the list of books for that instance.
-
+that being quote and it's source and finally we get the list of books for that instance. 
 book contains the three books assigned to a philosopher, the Book object holds the title, author and coverAsset.
 It's just object construction with a different set of identifiers. The usual syntax like [] brackets for the list
 as well as the enclosing of the objects still apply. The information contained in these sectionshas been verified 
@@ -154,7 +149,6 @@ AI code I understand:
 historyIds is simple it just grabs the recent philosophers in the local storage, eligible filters the list down
 towards the ones that are not currently in history. .where() goes through each of the philosophers that matches the condition.
 The condition is the !historyIds.contains(p.id) which basically means keep it if its ID is not in history
-
 .toList() does what it says, just converts the results into a list. Then we have the safety net, pool is active whenever 
 eligible is empty, a moment like it is when the app first starts up, There's nothing in history yet so the app would default
 to the whole philosopherPool. Other than that, before the addition of the extra 5 philosophers, the pool only had 5 total
