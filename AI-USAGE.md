@@ -7,7 +7,7 @@ September 19, 2026, Claude AI
 - Assistance with the project utilizing the already made proposal, mockup and style guide
 - It returned, with the project folders and widgets providing the foundational framework that everything else was built on.
 - I kept everything, since the prompting was specific it only took a few changes that will be covered in the other entries to fix.
-- commit link: 88cc73c59957c5ee835ac195edc46050a491210e0 (Commit that pushed the local files into the repo)
+- commit link: 8cc73c59957c5ee835ac195edc46050a491210e0 (Commit that pushed the local files into the repo)
 
 
 - the date, and which tool you used
