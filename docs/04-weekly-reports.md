@@ -1,10 +1,31 @@
 # Weekly reports
 
-One entry per week, newest at the top, written **during** that week. Five minutes
-each. They are the record of how the project actually went, and they make your
-final reflection almost write itself.
+## Week 3 (September 27 - Oct 2)
 
-Copy this block:
+**Done this week**
+- Fixed the banner gradient issue
+- Added the mystery avatar in the dashboard
+- Extended the pool by 5 philosophers
+
+**In progress**
+- Demo and documents Finalization
+
+**Blocked or stuck on**
+- Checking/verification and filling out of AI-Usage
+
+**Decisions made, and why**
+- Needed the extra five philosophers to verify the history pool being excluded from the randomization.
+- Gradient fix was always intended and is finally added.
+- Dashboard looks more lively with the avatar in place so it was a good decision.
+- Documentation needed to be last so the updates would have more content rather than a continuous back and forth.
+
+**Hours spent, roughly:**
+around 4-6 hours total on and off. 
+
+**Next week I will:**
+- Possibly add more of the stretch goals (Quote pool), depending on time availability
+
+---
 
 ---
 
