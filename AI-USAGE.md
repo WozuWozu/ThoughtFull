@@ -42,13 +42,6 @@ a ShaderMask to make a proper gradient effect.
 - commit link: https://github.com/WozuWozu/ThoughtFull/commit/aef35b2f2d9ae5c70da8116a3e093f8df4287b2b
 
 October 01, 2026, Claude (claude.ai)
-- Asked for assistance regarding the gradient on the banner being more of a block.
-- Via a screenshot it was able to see how unsightly the original output was, and cooked up
-a ShaderMask to make a proper gradient effect.
-- Kept a bit of the original banner logic, it was mostly additions via the ShaderMask and blending.
-- commit link: https://github.com/WozuWozu/ThoughtFull/commit/aef35b2f2d9ae5c70da8116a3e093f8df4287b2b
-
-October 01, 2026, Claude (claude.ai)
 - I asked for help in both the template and checking of the proposal document. It checked the
 earlier one passed for midterms so to keep it consistent I went and used Claude again.
 - It drafted up a template where I could slot in the same information as the previous proposal,
