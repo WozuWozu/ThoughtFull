@@ -7,5 +7,5 @@
 ## Components and Changes since the last version
 ![Design system](assets/thoughtfull-design-system-3.png)
 
-[Design system (PDF)](assets/thoughtfull-design-system.pdf)
+Link to the PDF: [Design system (PDF)](assets/thoughtfull-design-system.pdf)
 
