@@ -1,15 +1,13 @@
 
 ### 1. How I used AI (35 points)
 
-At least six entries. One per real use. Each entry says:
-
-September 19, 2026, Claude AI (claude.ai)
+1. September 19, 2026, Claude AI (claude.ai)
 - Assistance with the project utilizing the already made proposal, mockup and style guide
 - It returned, with the project folders and widgets providing the foundational framework that everything else was built on.
 - I kept most things, since the prompting was specific it only took a few changes that will be covered in the other entries to fix.
 - commit link: https://github.com/WozuWozu/ThoughtFull/commit/8cc73c59957c5ee835ac195edc46050a491210e0 (Commit that pushed the local files into the repo)
 
-September 25, 2026, Claude (claude.ai)
+2. September 25, 2026, Claude (claude.ai)
 - I asked for help in excluding the current history or last 4 picks from the randomizer
 since the original _pickRandom() had no intended filtering logic.
 - It pointed me to the direction of a filtered-pool which was basically making another
@@ -17,7 +15,7 @@ another list of the current pool of history via getHistory() and a fallback in c
 - The core logic was kept. and only the addition of 
 - commit link: https://github.com/WozuWozu/ThoughtFull/commit/cd4b61f0a277630a7ac0fb68b40022b3eca1f594
 
-September 26, 2026, Claude (claude.ai)
+3. September 26, 2026, Claude (claude.ai)
 - I asked for help in making the weekly reports, mainly checking whether I've covered everything required
 or whether the reports are consistent due to how much text there was.
 - It directed me on areas that fell short such as missing a section or mistaking a date, messing up the amount of hours
@@ -25,7 +23,7 @@ or inconsistencies in wording that made the sentence read wrong
 - Everything that got flagged was adjusted for a proper report.
 - commit link: https://github.com/WozuWozu/ThoughtFull/commit/ecb5f3750f0412aec44590ded55c01095ca08868
 
-September 26, 2026, Claude (claude.ai)
+4. September 26, 2026, Claude (claude.ai)
 - Regarding the concern the app being somewhat choppy, I asked Claude for assistance in identifying the typical issues
 or causes of a choppy flutter app.
 - It spotted that all the photos were rendering at full resolution even though it was not required due to how small
@@ -34,14 +32,14 @@ their canvases were.
 so it wouldn't render the full resolution.
 - commit link: https://github.com/WozuWozu/ThoughtFull/commit/007e45164b626528e55844ab84fc77866f449eff
 
-September 29, 2026, Claude (claude.ai)
+5. September 29, 2026, Claude (claude.ai)
 - Asked for assistance regarding the gradient on the banner being more of a block.
 - Via a screenshot it was able to see how unsightly the original output was, and cooked up
 a ShaderMask to make a proper gradient effect.
 - Kept a bit of the original banner logic, it was mostly additions via the ShaderMask and blending.
 - commit link: https://github.com/WozuWozu/ThoughtFull/commit/aef35b2f2d9ae5c70da8116a3e093f8df4287b2b
 
-October 01, 2026, Claude (claude.ai)
+6. October 01, 2026, Claude (claude.ai)
 - I asked for help in both the template and checking of the proposal document. It checked the
 earlier one passed for midterms so to keep it consistent I went and used Claude again.
 - It drafted up a template where I could slot in the same information as the previous proposal,
@@ -50,26 +48,38 @@ multiple typos and inconsistencies which a number of my commits should show.
 - Kept the template, filled in all the areas, and rechecked it both myself and with AI
 - commit link: https://github.com/WozuWozu/ThoughtFull/commit/7549bc2d89dfcb0858482c48e83cc269f15a12f1
 
-
-```
-- the date, and which tool you used
-- what you asked it for
-- what it gave back
-- what you kept, what you changed, and why
-- **a link to the commit where that work landed**
-```
-
 ### 2. Where the AI got it wrong (25 points)
 
-Three times the AI gave you something wrong, unsafe, out of date, or just worse
-than what you did instead. For each one: what it gave you, what was wrong with
-it, what you did instead, and the commit link.
+## Issue 1: Philosopher Duplication
+- What it gave me: _pickRandom() function
+- What was wrong with it: In an earlier session the first version of _pickRandom() was a completely random pick
+with no exclusion of history at all, the philosopher/history integration I wanted was not accounted for until I asked
+for a follow up
+- What I did with it: Inquired for a fix, received one requiring the getHistory() function to make a seperate pool
+for exclusion.
+- commit link: https://github.com/WozuWozu/ThoughtFull/commit/cd4b61f0a277630a7ac0fb68b40022b3eca1f594
 
-This section is worth real points because it is the hard part. Taking good code
-is not a skill. Catching bad code is. If you write that the AI was never wrong,
-this section scores zero, so do not be tempted.
+## Issue 2: Broken merge with a duplicate child: parameter
+- What it gave me: A ShaderMask snippet meant to replace the old Image.asset inside the FractionallySizedBox
+- What was wrong with it: The instructions provided were for a manual merge, I ended up with 2 child: parameters in
+the same widget which was flagging VScode and causing a compile error.
+- What I did with it: Returned a screenshot of the error so it could locate the issue, I was told which
+lines got duplicated and also deleted the old block.
+- commit link: https://github.com/WozuWozu/ThoughtFull/commit/aef35b2f2d9ae5c70da8116a3e093f8df4287b2b#diff-688acc40438ac47048449d5d83d04a1c5e57b0315433d6ef05efa03ef1574f2f
+
+## Issue 3: Lost right-alignment wrapper
+- What it gave me: A second edit regarding the gradient stops/alpha on the same widget
+- What was wrong with it: The returned snippet silently dropped the Align(alignment:Alignment.centerRight) as well as the FractionallySizedBox wrapper
+the portrait rendered in the center, instead of right-aligned which was the mockup intention
+- What I did with it: Screenshotted the mis-alignment and received a corrected snippet with the included alignments
+- commit link: https://github.com/WozuWozu/ThoughtFull/commit/aef35b2f2d9ae5c70da8116a3e093f8df4287b2b#diff-688acc40438ac47048449d5d83d04a1c5e57b0315433d6ef05efa03ef1574f2f
+(same link since both issue 2 and 3 were being locally done before pushing)
 
 ### 3. Who wrote what (30 points)
+
+## Code I Wrote:
+
+## AI code I understand: 
 
 This is the 80 percent rule, made checkable.
 
