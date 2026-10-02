@@ -3,12 +3,27 @@
 
 At least six entries. One per real use. Each entry says:
 
-September 19, 2026, Claude AI
+September [19], 2026, Claude AI (claude.ai)
 - Assistance with the project utilizing the already made proposal, mockup and style guide
 - It returned, with the project folders and widgets providing the foundational framework that everything else was built on.
-- I kept everything, since the prompting was specific it only took a few changes that will be covered in the other entries to fix.
-- commit link: 8cc73c59957c5ee835ac195edc46050a491210e0 (Commit that pushed the local files into the repo)
+- I kept most things, since the prompting was specific it only took a few changes that will be covered in the other entries to fix.
+- commit link: [https://github.com/WozuWozu/ThoughtFull/commit/8cc73c59957c5ee835ac195edc46050a491210e0] (Commit that pushed the local files into the repo)
 
+September [25], 2026, Claude (claude.ai)
+- I asked for help in excluding the current history or last 4 picks from the randomizer
+since the original _pickRandom() had no intended filtering logic.
+- It pointed me to the direction of a filtered-pool which was basically making another
+another list of the current pool of history via getHistory() and a fallback in case the history is empty
+- The core logic was kept. and only the addition of 
+- commit link: [https://github.com/WozuWozu/ThoughtFull/commit/cd4b61f0a277630a7ac0fb68b40022b3eca1f594]
+
+September [26], 2026, Claude (claude.ai)
+- I asked for help in making the weekly reports, mainly checking whether I've covered everything required
+or whether the reports are consistent due to how much text there was.
+- It directed me on areas that fell short such as missing a section or mistaking a date, messing up the amount of hours
+or inconsistencies in wording that made the sentence read wrong
+- Everything that got flagged was adjusted for a proper report.
+- commit link: [https://github.com/WozuWozu/ThoughtFull/commit/ecb5f3750f0412aec44590ded55c01095ca08868]
 
 - the date, and which tool you used
 - what you asked it for
