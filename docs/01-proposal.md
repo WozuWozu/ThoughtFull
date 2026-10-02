@@ -19,8 +19,6 @@ having to already know who or what they're looking for.
 1. **Randomized picker** — rolls a random philosopher from the bundled pool
    each time the user taps the pick button, avoiding repeats already shown
    in history.
-2. **Randomized quotes** — each philosopher has a small pool of quotes;
-   one is shown per pick.
 3. **Philosopher detail view** — an expandable section (`ExpansionTile`)
    showing the philosopher's ideology and bio.
 4. **Book recommendations** — a horizontal list of recommended books tied
@@ -44,11 +42,10 @@ having to already know who or what they're looking for.
 - **Book purchase links / pricing** — remains a stretch goal; requires
   either a paid API or manual price upkeep, which isn't worth the time
   against the core experience.
-- **Extended quote pool** — attempted as a stretch goal but ultimately
+- **Randomized Philosopher Quote Pool** — attempted as a stretch goal but ultimately
   abandoned for this submission; sourcing a larger, verified quote pool
-  per philosopher proved too time-costly against the remaining weeks.
-  Left in the stretch goals list as a known future direction, not part
-  of the current final submission.
+  per philosopher is too time costly since it would need its own data folder as well as inputs
+  3 quotes per philosopher and currently there are 10 so it would grow exponentially.
 
 ## Data the app remembers, and where it is saved
 
