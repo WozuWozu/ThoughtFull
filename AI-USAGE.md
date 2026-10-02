@@ -50,7 +50,7 @@ multiple typos and inconsistencies which a number of my commits should show.
 
 ### 2. Where the AI got it wrong (25 points)
 
-## Issue 1: Philosopher Duplication
+Issue 1: Philosopher Duplication
 - What it gave me: _pickRandom() function
 - What was wrong with it: In an earlier session the first version of _pickRandom() was a completely random pick
 with no exclusion of history at all, the philosopher/history integration I wanted was not accounted for until I asked
@@ -59,7 +59,7 @@ for a follow up
 for exclusion.
 - commit link: https://github.com/WozuWozu/ThoughtFull/commit/cd4b61f0a277630a7ac0fb68b40022b3eca1f594
 
-## Issue 2: Broken merge with a duplicate child: parameter
+Issue 2: Broken merge with a duplicate child: parameter
 - What it gave me: A ShaderMask snippet meant to replace the old Image.asset inside the FractionallySizedBox
 - What was wrong with it: The instructions provided were for a manual merge, I ended up with 2 child: parameters in
 the same widget which was flagging VScode and causing a compile error.
@@ -67,7 +67,7 @@ the same widget which was flagging VScode and causing a compile error.
 lines got duplicated and also deleted the old block.
 - commit link: https://github.com/WozuWozu/ThoughtFull/commit/aef35b2f2d9ae5c70da8116a3e093f8df4287b2b#diff-688acc40438ac47048449d5d83d04a1c5e57b0315433d6ef05efa03ef1574f2f
 
-## Issue 3: Lost right-alignment wrapper
+Issue 3: Lost right-alignment wrapper
 - What it gave me: A second edit regarding the gradient stops/alpha on the same widget
 - What was wrong with it: The returned snippet silently dropped the Align(alignment:Alignment.centerRight) as well as the FractionallySizedBox wrapper
 the portrait rendered in the center, instead of right-aligned which was the mockup intention
@@ -77,26 +77,93 @@ the portrait rendered in the center, instead of right-aligned which was the mock
 
 ### 3. Who wrote what (30 points)
 
-## Code I Wrote:
+Code I Wrote:
+```
+ Philosopher(
+    portraitAsset: 'assets/portraits/edward_said.jpg',
+    id: 'edward_said',
+    name: 'Edward Said',
+    era: 'PALESTINIAN-AMERICAN · 1935–2003',
+    ideology: 'Postcolonial Theory',
+    bio:
+        'Edward Said was born in Jerusalem in 1935 and educated in Egypt, '
+        'the United States, and at Princeton and Harvard, before spending '
+        'most of his career as a professor of literature at Columbia '
+        'University. Alongside his academic work he was a prominent, '
+        'outspoken advocate for Palestinian rights and a longtime member of '
+        'the Palestinian National Council. He died in New York in 2003 '
+        'after a long illness.',
+    philosophy:
+        'Said\'s best-known book, Orientalism (1978), argued that centuries '
+        'of Western scholarship, art, and literature about "the East" '
+        'weren\'t neutral descriptions but a constructed image — one that '
+        'made the Middle East and Asia seem exotic, backward, or dangerous '
+        'in ways that conveniently justified colonial control. He called '
+        'this constructed image "Orientalism" and treated it as a case '
+        'study in how knowledge and power reinforce each other: who gets '
+        'to describe a culture, he argued, is rarely separate from who gets '
+        'to rule it.',
+    quote: 'Nations themselves are narrations.',
+    quoteSource: 'Culture and Imperialism, 1993.',
+    books: [
+      Book(title: 'Orientalism', author: 'Edward Said',
+      coverAsset: 'assets/books/orientalism.png'),
+      Book(title: 'Culture and Imperialism', author: 'Edward Said',
+      coverAsset: 'assets/books/cultureimperialism.jpg'),
+      Book(title: 'Out of Place: A Memoir', author: 'Edward Said',
+      coverAsset: 'assets/books/outofplace.jpg'),
+    ],
+  ),
+];
+```
+- Going through Information Management (SQL) and a bit of OOP made it easier to understand how to make a datasheet of sorts.
+Philosopher() instance holds that particular philosopher within the philosopherPool list, portraitAsset:
+'assets/portraits/edward_said.jpg', pulls the photo within the asset folder via its string name rather than
+a directory.
 
-## AI code I understand: 
+There's the named parameters as well you usually see in constructors that being
+id, name, era and ideology. These strings are basically unique identifiers that let the app
+look up that particular philosopher.
 
-This is the 80 percent rule, made checkable.
+There's also the bio and philosophy sections which are basically split up across lines for formatting reasons
+and the usual basics like using \'s to make sure dart recognizes it as the character. There's 2 more string fields
+that being quote and it's source and finally we get the list of books for that instance.
 
-Name the parts of the project **you** wrote yourself. For each one give the file,
-the commit, and a short explanation in your own words: what it does, and why it
-is built that way. A widget you built yourself, or the place your state actually lives is a good
-example of the kind of thing to pick.
+book contains the three books assigned to a philosopher, the Book object holds the title, author and coverAsset.
+It's just object construction with a different set of identifiers. The usual syntax like [] brackets for the list
+as well as the enclosing of the objects still apply. The information contained in these sectionshas been verified 
+and sourced correctly this applies to the whole philosophers_data folder which has numerous other entries with the same format.
 
-Then do the same for the one piece of AI-written code you understand best.
+- File: philosophers_data.dart
+- commit: https://github.com/WozuWozu/ThoughtFull/commit/ab7e90914e4e0fe1d7ccb795975f6a078980f816
 
-What earns full marks here is the **explanation**, not who typed it. "The AI
-wrote this and here is exactly what it does and why we kept it" is a strong
-answer. A list of filenames with no explanation is a weak one, no matter who
-wrote them.
+AI code I understand: 
+```
+   // Filters current history out of the pool
+    final historyIds = await _historyService.getHistory();
+    final eligible = philosopherPool
+      .where((p) => !historyIds.contains(p.id))
+      .toList();
+    
+    final pool = eligible.isNotEmpty ? eligible : philosopherPool;
 
-If you cannot point at any meaningful part of the project as your own, this
-section scores zero, and you cannot reach the 75 points the badge needs.
+    final pick = pool[_random.nextInt(pool.length)];
+    await _historyService.addPick(pick.id);
+```
+- It's a simple enough fix looking back on it however, it did contain syntax I didn't understand at the time.
+historyIds is simple it just grabs the recent philosophers in the local storage, eligible filters the list down
+towards the ones that are not currently in history. .where() goes through each of the philosophers that matches the condition.
+The condition is the !historyIds.contains(p.id) which basically means keep it if its ID is not in history
+
+.toList() does what it says, just converts the results into a list. Then we have the safety net, pool is active whenever 
+eligible is empty, a moment like it is when the app first starts up, There's nothing in history yet so the app would default
+to the whole philosopherPool. Other than that, before the addition of the extra 5 philosophers, the pool only had 5 total
+which made it so that the fallback did more work than intended since the history would eat up the other 4 available philosophers.
+pick just picks the philosopher from either pool (eligible or default) and lastly
+.addPick(pick.id) just lets it save into history.
+
+- File: dashboard_screen.dart
+- commit: https://github.com/WozuWozu/ThoughtFull/commit/cd4b61f0a277630a7ac0fb68b40022b3eca1f594
 
 ## Your README credit (10 points)
 
