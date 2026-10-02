@@ -3,27 +3,27 @@
 
 At least six entries. One per real use. Each entry says:
 
-September [19], 2026, Claude AI (claude.ai)
+September 19, 2026, Claude AI (claude.ai)
 - Assistance with the project utilizing the already made proposal, mockup and style guide
 - It returned, with the project folders and widgets providing the foundational framework that everything else was built on.
 - I kept most things, since the prompting was specific it only took a few changes that will be covered in the other entries to fix.
-- commit link: [https://github.com/WozuWozu/ThoughtFull/commit/8cc73c59957c5ee835ac195edc46050a491210e0] (Commit that pushed the local files into the repo)
+- commit link: https://github.com/WozuWozu/ThoughtFull/commit/8cc73c59957c5ee835ac195edc46050a491210e0 (Commit that pushed the local files into the repo)
 
-September [25], 2026, Claude (claude.ai)
+September 25, 2026, Claude (claude.ai)
 - I asked for help in excluding the current history or last 4 picks from the randomizer
 since the original _pickRandom() had no intended filtering logic.
 - It pointed me to the direction of a filtered-pool which was basically making another
 another list of the current pool of history via getHistory() and a fallback in case the history is empty
 - The core logic was kept. and only the addition of 
-- commit link: [https://github.com/WozuWozu/ThoughtFull/commit/cd4b61f0a277630a7ac0fb68b40022b3eca1f594]
+- commit link: https://github.com/WozuWozu/ThoughtFull/commit/cd4b61f0a277630a7ac0fb68b40022b3eca1f594
 
-September [26], 2026, Claude (claude.ai)
+September 26, 2026, Claude (claude.ai)
 - I asked for help in making the weekly reports, mainly checking whether I've covered everything required
 or whether the reports are consistent due to how much text there was.
 - It directed me on areas that fell short such as missing a section or mistaking a date, messing up the amount of hours
 or inconsistencies in wording that made the sentence read wrong
 - Everything that got flagged was adjusted for a proper report.
-- commit link: [https://github.com/WozuWozu/ThoughtFull/commit/ecb5f3750f0412aec44590ded55c01095ca08868]
+- commit link: https://github.com/WozuWozu/ThoughtFull/commit/ecb5f3750f0412aec44590ded55c01095ca08868
 
 September [26], 2026, Claude (claude.ai)
 - Regarding the concern the app being somewhat choppy, I asked Claude for assistance in identifying the typical issues
@@ -32,14 +32,31 @@ or causes of a choppy flutter app.
 their canvases were.
 - Kept the logic of the photos as well as their portraits and DecoratedBox sizes, added a cap to the cache 
 so it wouldn't render the full resolution.
-- commit link: [https://github.com/WozuWozu/ThoughtFull/commit/007e45164b626528e55844ab84fc77866f449eff]
+- commit link: https://github.com/WozuWozu/ThoughtFull/commit/007e45164b626528e55844ab84fc77866f449eff
 
-September [29], 2026, Claude (claude.ai)
+September 29, 2026, Claude (claude.ai)
 - Asked for assistance regarding the gradient on the banner being more of a block.
-- Via a screenshot it was able to see how unsightly the original output was and cooked up, 
+- Via a screenshot it was able to see how unsightly the original output was, and cooked up
 a ShaderMask to make a proper gradient effect.
 - Kept a bit of the original banner logic, it was mostly additions via the ShaderMask and blending.
-- commit link: [https://github.com/WozuWozu/ThoughtFull/commit/aef35b2f2d9ae5c70da8116a3e093f8df4287b2b]
+- commit link: https://github.com/WozuWozu/ThoughtFull/commit/aef35b2f2d9ae5c70da8116a3e093f8df4287b2b
+
+October 01, 2026, Claude (claude.ai)
+- Asked for assistance regarding the gradient on the banner being more of a block.
+- Via a screenshot it was able to see how unsightly the original output was, and cooked up
+a ShaderMask to make a proper gradient effect.
+- Kept a bit of the original banner logic, it was mostly additions via the ShaderMask and blending.
+- commit link: https://github.com/WozuWozu/ThoughtFull/commit/aef35b2f2d9ae5c70da8116a3e093f8df4287b2b
+
+October 01, 2026, Claude (claude.ai)
+- I asked for help in both the template and checking of the proposal document. It checked the
+earlier one passed for midterms so to keep it consistent I went and used Claude again.
+- It drafted up a template where I could slot in the same information as the previous proposal,
+not many things changed except for a few stretch goals being removed. Other than that it saw
+multiple typos and inconsistencies which a number of my commits should show.
+- Kept the template, filled in all the areas, and rechecked it both myself and with AI
+- commit link: https://github.com/WozuWozu/ThoughtFull/commit/7549bc2d89dfcb0858482c48e83cc269f15a12f1
+
 
 ```
 - the date, and which tool you used
@@ -48,11 +65,6 @@ a ShaderMask to make a proper gradient effect.
 - what you kept, what you changed, and why
 - **a link to the commit where that work landed**
 ```
-That last line is not optional. An entry with no commit behind it earns nothing,
-because there is no way to tell it happened.
-
-**Being honest about using AI a lot does not cost you marks.** This section
-rewards an accurate account, not a small one.
 
 ### 2. Where the AI got it wrong (25 points)
 
