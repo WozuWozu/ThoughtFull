@@ -10,7 +10,7 @@ that *shows* your palette, type scale, spacing and components, put it in
 
 ![Design system](assets/thoughtfull-design-system-1.png)
 ![Design system](assets/thoughtfull-design-system-2.png)
-![Design system](assets/thoughtfull-design-system-3.png)
+
 
 [Design system (PDF)](assets/thoughtfull-design-system.pdf)
 
