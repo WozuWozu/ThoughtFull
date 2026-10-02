@@ -25,12 +25,29 @@ or inconsistencies in wording that made the sentence read wrong
 - Everything that got flagged was adjusted for a proper report.
 - commit link: [https://github.com/WozuWozu/ThoughtFull/commit/ecb5f3750f0412aec44590ded55c01095ca08868]
 
+September [26], 2026, Claude (claude.ai)
+- Regarding the concern the app being somewhat choppy, I asked Claude for assistance in identifying the typical issues
+or causes of a choppy flutter app.
+- It spotted that all the photos were rendering at full resolution even though it was not required due to how small
+their canvases were.
+- Kept the logic of the photos as well as their portraits and DecoratedBox sizes, added a cap to the cache 
+so it wouldn't render the full resolution.
+- commit link: [https://github.com/WozuWozu/ThoughtFull/commit/007e45164b626528e55844ab84fc77866f449eff]
+
+September [29], 2026, Claude (claude.ai)
+- Asked for assistance regarding the gradient on the banner being more of a block.
+- Via a screenshot it was able to see how unsightly the original output was and cooked up, 
+a ShaderMask to make a proper gradient effect.
+- Kept a bit of the original banner logic, it was mostly additions via the ShaderMask and blending.
+- commit link: [https://github.com/WozuWozu/ThoughtFull/commit/aef35b2f2d9ae5c70da8116a3e093f8df4287b2b]
+
+```
 - the date, and which tool you used
 - what you asked it for
 - what it gave back
 - what you kept, what you changed, and why
 - **a link to the commit where that work landed**
-
+```
 That last line is not optional. An entry with no commit behind it earns nothing,
 because there is no way to tell it happened.
 
