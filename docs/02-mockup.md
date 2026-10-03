@@ -5,7 +5,7 @@ mockup shows what it looks like.
 
 ## Mockup
 
-Mockup Link: ![Mockup PDF](assets/thoughtfull-mockup.pdf)
+Mockup Link: [Mockup PDF](assets/thoughtfull-mockup.pdf)
 ### Page 1
 ![Mockup Page 1](assets/mockup-sc-1.png)
 ### Page 2
