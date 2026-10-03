@@ -1,15 +1,15 @@
 # Demo video
 
-**File:** `demo.mp4` in this folder, or the hosted link (see below)
-**Length:** aim for 3 to 5 minutes
-**Recorded on:** the device you used
+**File:** demo.mp4 
+**Length:** 4 mins 25 seconds
+**Recorded on:** OBS Studio (desktop)
 
 ## What it shows
 
 A short list, in order, so a viewer can skip to what they need:
 
-- 0:00 what the app is and who it is for
-- 0:20 ...
+- 0:00 What the app is and who it is for
+- 0:23 Demo - app pages, 
 - 1:10 ...
 
 Cover, in this order: the main user journey end to end, anything that only works
