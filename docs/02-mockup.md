@@ -11,11 +11,6 @@ Mockup Link: [Mockup PDF](assets/thoughtfull-mockup.pdf)
 ### Page 2
 ![Mockup Page 2](assets/mockup-sc-2.png)
 
-Put your mockup images or PDF in `assets/` and embed them here, one heading per
-screen.
-
-_(Embed your mockup here once it is in `assets/`.)_
-
 ## Wireframes
 
 Disclaimer: The wireframe here was from the prototype app with a completely different concept from ThoughtFull,
