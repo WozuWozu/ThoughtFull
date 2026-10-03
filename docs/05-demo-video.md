@@ -1,6 +1,6 @@
 # Demo video
 
-**File:** [docs/demo.mp4](docs/demo.mp4) 
+**File:** [demo.mp4](demo.mp4) 
 
 **Google Drive:** https://drive.google.com/file/d/11pISHaVfr62SFYRUTL8y9kG5apo5M7Yh/view?usp=sharing
 
