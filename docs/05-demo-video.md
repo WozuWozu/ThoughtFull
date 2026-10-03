@@ -1,6 +1,6 @@
 # Demo video
 
-**File:** demo.mp4 
+**File:** [docs/demo.mp4](docs/demo.mp4) 
 
 **Google Drive:** https://drive.google.com/file/d/11pISHaVfr62SFYRUTL8y9kG5apo5M7Yh/view?usp=sharing
 
@@ -13,8 +13,8 @@
 A short list, in order, so a viewer can skip to what they need:
 
 - 0:00 What the app is and who it is for
-- 0:23 Demo - app pages, 
-- 1:10 ...
+- 0:23 Demo - app pages, dashboard, philosopher-screen and history
+- 1:21 AI Credit - What Claude was used for 
 
 Cover, in this order: the main user journey end to end, anything that only works
 on a real device (camera, GPS, sensors), and the thing you are proudest of.
