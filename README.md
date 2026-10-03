@@ -6,8 +6,8 @@
 recommendations — one thinker at a time.
 
 
-**Live demo:** https://wozuwozu.github.io/ThoughtFull/ <!-- GitHub Pages is set up already; replace if you host elsewhere -->
-**Demo video:** `docs/demo.mp4` (link it here once it exists)
+**Live demo:** https://wozuwozu.github.io/ThoughtFull/ 
+**Demo video:** `docs/demo.mp4` 
 **Course:** Applications Development and Emerging Technologies (6ADET), Holy Angel University
 **Author:** WozuWozu
 
@@ -58,8 +58,6 @@ is N/A
 
 ## Privacy and secrets
 
-Required section. Two or three honest sentences:
-
 The app stores no personal data. The only thing saved locally is a 
 small list of philosopher IDs that the user has already seen via the
 'shared_preferences' - no data leaves the device, there is no account system,
@@ -83,10 +81,6 @@ no real personal information.
 | [Security and privacy](docs/06-security-and-privacy.md) | the checklist, filled in |
 
 ## Status and what is next
-
-Be honest. What works, what is half done, what you would build next. An honest
-"known issues" section reads better than a claim the reader disproves in thirty
-seconds.
 
 The app is functional with the randomized philosophers, history and philosopher card screens.
 Randomized quotes is most likely the biggest update in store, should there be time for it.
