@@ -1,7 +1,9 @@
 # Demo video
 
 **File:** demo.mp4 
+
 **Length:** 4 mins 25 seconds
+
 **Recorded on:** OBS Studio (desktop)
 
 ## What it shows
