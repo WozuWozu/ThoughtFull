@@ -5,6 +5,10 @@ mockup shows what it looks like.
 
 ## Mockup
 
+![Mockup PDF](assets/thoughtfull-mockup.pdf)
+![Mockup Page 1](assets/mockup-sc-1.png)
+![Mockup Page 2](assets/mockup-sc-2.png)
+
 Put your mockup images or PDF in `assets/` and embed them here, one heading per
 screen.
 
