@@ -29,7 +29,7 @@ personal data.
 
 | Dashboard | Philosopher Screen | History | 
 | --- | --- | --- |
-| ![Dashboard](docs/assets/thoughtfull-dashboard-final.png) | ![Philosopher Screen](docs/assets/thoughtfull-philosopher-screen-final.png | ![History](docs/assets/thoughtfull-history-final.png) |
+| ![Dashboard](docs/assets/thoughtfull-dashboard-final.png) | ![Philosopher Screen](docs/assets/thoughtfull-philosopher-screen-final.png) | ![History](docs/assets/thoughtfull-history-final.png) |
 
 ## What it does
 
