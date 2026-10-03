@@ -26,20 +26,13 @@ personal data.
 
 ## Screenshots
 
-Put two or three real screenshots at phone size in `docs/assets/`, then replace
-this paragraph with them:
-
 ```markdown
-| Home | Detail | Add |
+| Dashboard | Philosopher Screen | History | 
 | --- | --- | --- |
-| ![Home](docs/assets/screen-home.png) | ![Detail](docs/assets/screen-detail.png) | ![Add](docs/assets/screen-add.png) |
+| ![Dashboard](docs/assets/thoughtfull-dashboard-final.png) | ![Philosopher Screen](docs/assets/thoughtfull-philosopher-screen-final.png | ![History](docs/assets/thoughtfull-history-final.png) |
 ```
 
-A repo without screenshots reads as abandoned, whatever the code says.
-
 ## What it does
-
-Three to five bullets. What can a user actually do?
 
 - Roll a randomized philosopher from the pool
 - View philosopher's bio, philosophy as well as book recommendations on them
