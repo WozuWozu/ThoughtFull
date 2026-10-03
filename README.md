@@ -1,10 +1,4 @@
-<!--
-  This is your project's front page. Replace every placeholder below.
-  It is the first thing your instructor and any future employer will read, and
-  the live link in it is how your project gets opened for grading.
 
-  New here? Read START-HERE.md first. Delete this comment when you are done.
--->
 [![Made with AI](https://img.shields.io/badge/Made_with-AI_assistance-blue)](AI-USAGE.md)
 # ThoughtFull
 
