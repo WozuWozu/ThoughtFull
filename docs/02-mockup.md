@@ -18,10 +18,13 @@ _(Embed your mockup here once it is in `assets/`.)_
 
 ## Wireframes
 
-Your earlier box-and-label sketches and the screen flow: which screen opens
-first, and how a user moves between them. Photos of paper are fine.
+Disclaimer: The wireframe here was from the prototype app with a completely different concept from ThoughtFull,
+ThoughtFull itself skipped the wireframe stage and went directly to mockup since it was simpler than the previous
+app. Timely was scrapped due to it's scope being far too demanding and beyond my skill level
 
-_(Embed your flow diagram and sketches here once they are in `assets/`.)_
+![Wireframe](assets/timely-wireframe.png)
+
+We didn't do flow diagrams and the sketch counted as the wireframe
 
 ## Screens
 
