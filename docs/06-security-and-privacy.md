@@ -3,7 +3,7 @@
 This repository is public. Fill this in honestly and date it; it is checked as
 part of grading.
 
-**Last checked:** YYYY-MM-DD
+**Last checked:** 2026-10-03
 
 ## What this app stores
 
