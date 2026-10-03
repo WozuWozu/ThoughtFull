@@ -50,7 +50,7 @@ Three to five bullets. What can a user actually do?
 | | |
 | --- | --- |
 | Framework | Flutter (Dart) |
-| State | `setState` / provider / riverpod (say which) |
+| State | `setState` (StatefulWidget) |
 | Storage | shared_preferences - history of rolled philosophers, stored locally as a List<String> of IDs|
 | Other packages | `google_fonts` (Poppins/Work Sans/Raleway typography, per the design system) |
 
@@ -58,33 +58,31 @@ Three to five bullets. What can a user actually do?
 
 ```bash
 flutter pub get
-cp .env.example .env      # only if your app needs keys, see below
 flutter run -d web-server --web-port 8080
 ```
 
-Then open http://localhost:8080. Requires Flutter (run `flutter --version` and
-put yours here).
+Then open http://localhost:8080. Requires Flutter 3.47.4 / Dart 3.13.3 or later
+(run `flutter --version` to check yours).
 
 ### Environment variables
 
-This project reads its configuration from a `.env` file that is **not** in the
-repository. Copy `.env.example`, fill in your own values, and never commit the
-result.
-
-| Variable | What it is | Where to get one |
-| --- | --- | --- |
-| `EXAMPLE_API_KEY` | ... | ... |
+The project is local so environmental variables do not apply,
+which is why the table in this section has been removed. All of it
+is N/A
 
 ## Privacy and secrets
 
 Required section. Two or three honest sentences:
 
-- What personal data this app stores, if any, and where it goes.
-- Where the secrets live (`.env` locally, repository secrets in the deploy
-  workflow) and what protects the data on the service side (Firestore rules,
-  Supabase RLS, or "nothing leaves the device").
-- Confirm that all sample data, screenshots and the video contain **no real
-  personal information**.
+The app stores no personal data. The only thing saved locally is a 
+small list of philosopher IDs that the user has already seen via the
+'shared_preferences' - no data leaves the device, there is no account system,
+and no network calls. All philosopher content (bios, quotes, book recommendations)
+are all static bundled content and not user input.
+
+There are no API keys or secrets that are required for the app to run, so there 
+are no '.env' configurations. All sample content screenshots and demo video contain
+no real personal information.
 
 ## Project documentation
 
@@ -115,8 +113,13 @@ scope is kept fairly small.
 - Packages: see `pubspec.yaml`
 - Philosopher Portraits: Sourced from Wikimedia Commons (public domain/
 CC-licensed where specified, individual file pages for licenses.)
-- Old Book Cover Images
-- People who helped, and how
+- Old book cover Images: were also sourced from Wikimedia Commons
+- Book cover images: sourced from Goodreads and similar sites. These are publisher
+cover art and are **not** independently licensed for reuse by me, these were included here
+for a non-commercial project to illustrate book recommendations , not claimed as original
+or freely licensed work.
+
+- tjakoen (instructor): giving project directives and suggestions throughout development
 
 ## AI use
 
