@@ -5,17 +5,17 @@
 
   New here? Read START-HERE.md first. Delete this comment when you are done.
 -->
-
+[![Made with AI](https://img.shields.io/badge/Made_with-AI_assistance-blue)](AI-USAGE.md)
 # ThoughtFull
 
 > A randomly picked philosopher, their ideology, a quote, biography, and book
 recommendations — one thinker at a time.
 
 
-**Live demo:** https://github.com/WozuWozu/ThoughtFull <!-- GitHub Pages is set up already; replace if you host elsewhere -->
+**Live demo:** https://wozuwozu.github.io/ThoughtFull/ <!-- GitHub Pages is set up already; replace if you host elsewhere -->
 **Demo video:** `docs/demo.mp4` (link it here once it exists)
 **Course:** Applications Development and Emerging Technologies (6ADET), Holy Angel University
-**Author:** Your Name
+**Author:** WozuWozu
 
 This repository lives in the author's own GitHub account and is public on
 purpose. There is no `student.json` here and there should not be one: see
@@ -41,9 +41,9 @@ A repo without screenshots reads as abandoned, whatever the code says.
 
 Three to five bullets. What can a user actually do?
 
-- ...
-- ...
-- ...
+- Roll a randomized philosopher from the pool
+- View philosopher's bio, philosophy as well as book recommendations on them
+- View their history or four recently rolled philosophers
 
 ## Built with
 
@@ -51,8 +51,8 @@ Three to five bullets. What can a user actually do?
 | --- | --- |
 | Framework | Flutter (Dart) |
 | State | `setState` / provider / riverpod (say which) |
-| Storage | shared_preferences / Hive / Drift / Firebase / Supabase / other |
-| Other packages | list the ones that matter, with a word on why |
+| Storage | shared_preferences - history of rolled philosophers, stored locally as a List<String> of IDs|
+| Other packages | `google_fonts` (Poppins/Work Sans/Raleway typography, per the design system) |
 
 ## Running it yourself
 
@@ -104,15 +104,26 @@ Be honest. What works, what is half done, what you would build next. An honest
 "known issues" section reads better than a claim the reader disproves in thirty
 seconds.
 
+The app is functional with the randomized philosophers, history and philosopher card screens.
+Randomized quotes is most likely the biggest update in store, should there be time for it.
+The current pool is 10 philosophers at the moment and will only increase after the quote
+randomization is finalized. At the moment there are no known current issues in the app considering it's
+scope is kept fairly small.
+
 ## Credits
 
 - Packages: see `pubspec.yaml`
-- Assets, icons, 3D models, sounds: name the author and the licence for each
+- Philosopher Portraits: Sourced from Wikimedia Commons (public domain/
+CC-licensed where specified, individual file pages for licenses.)
+- Old Book Cover Images
 - People who helped, and how
 
 ## AI use
 
-Usage in app design layout as well as assistance in both code, documentation and cross referencing outputs.
+The project was built with a substantial amount of assistance from Claude AI (Anthropic)
+which was used for debugging, UI/layout iterations, explanation of code as well as 
+support in documentation throughout development. See [AI-USAGE.md](AI-USAGE.md) for the breakdown,
+of what was asked for, changes made as well as concepts kept.
 
 ## Licence
 
