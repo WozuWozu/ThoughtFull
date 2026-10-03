@@ -10,14 +10,13 @@
 
 ## What it shows
 
-A short list, in order, so a viewer can skip to what they need:
-
 - 0:00 What the app is and who it is for
 - 0:23 Demo - app pages, dashboard, philosopher-screen and history
-- 1:21 AI Credit - What Claude was used for 
-
-Cover, in this order: the main user journey end to end, anything that only works
-on a real device (camera, GPS, sensors), and the thing you are proudest of.
+- 1:21 AI Credit - What Claude was used for
+- 1:58 Tech Continuation - VS code showcase and quick explanation of each file
+- 2:55 Challenges - Conceptualization, app building, documentation
+- 3:45 What's Next?? - Randomized quotes (3 per philosopher) as well as additional philosopher pool
+- 4:19 Wrap up - Thank you and square image
 
 ## Getting it into the repo
 
