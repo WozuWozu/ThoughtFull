@@ -6,7 +6,9 @@ mockup shows what it looks like.
 ## Mockup
 
 Mockup Link: ![Mockup PDF](assets/thoughtfull-mockup.pdf)
+### Page 1
 ![Mockup Page 1](assets/mockup-sc-1.png)
+### Page 2
 ![Mockup Page 2](assets/mockup-sc-2.png)
 
 Put your mockup images or PDF in `assets/` and embed them here, one heading per
