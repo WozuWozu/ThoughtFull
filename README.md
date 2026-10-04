@@ -7,8 +7,11 @@ recommendations — one thinker at a time.
 
 
 **Live demo:** https://wozuwozu.github.io/ThoughtFull/ 
+
 **Demo video:** `docs/demo.mp4` 
+
 **Course:** Applications Development and Emerging Technologies (6ADET), Holy Angel University
+
 **Author:** WozuWozu
 
 This repository lives in the author's own GitHub account and is public on
