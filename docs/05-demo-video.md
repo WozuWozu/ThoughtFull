@@ -4,7 +4,7 @@
 
 **Google Drive:** https://drive.google.com/file/d/11pISHaVfr62SFYRUTL8y9kG5apo5M7Yh/view?usp=sharing
 
-**Length:** 4 mins 24 seconds
+**Length:** 4 mins 24 seconds (was rushed due to 5 min limit not being lifted yet)
 
 **Recorded on:** OBS Studio (desktop)
 
