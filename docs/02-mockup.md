@@ -1,7 +1,5 @@
 # Mockup and wireframes
 
-The visual plan for this app. Your wireframes answered what goes where; the
-mockup shows what it looks like.
 
 ## Mockup
 
