@@ -1,8 +1,5 @@
 # Security and privacy
 
-This repository is public. Fill this in honestly and date it; it is checked as
-part of grading.
-
 **Last checked:** 2026-10-04
 
 ## What this app stores
