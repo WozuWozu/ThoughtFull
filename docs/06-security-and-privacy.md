@@ -34,12 +34,19 @@ stored via 'shared_preferences' and is never transmitted anywhere.
 ## Checklist
 
 - [x] `.env` (or `env.json`) is in `.gitignore`, and `.env.example` is committed
+      - N/A no '.env' file is used so there is nothing to gitignore
 - [x] `git log -p | grep -i "api_key\|secret\|password\|token"` finds nothing real
+      - confirmed, no real credentials was ever committed, since ThoughtFull uses no backend or API keys
 - [x] No service account file, keystore or `service_role` key anywhere in the repo
+      - confirmed, web-only deployment so no signing or credentials
 - [x] Security rules or RLS policies written and tested, not left open
+      - N/A no backend or database of any kind
 - [x] No real personal data in sample data, screenshots or the video
+      - confirmed, all philosopher content is public-domain or historical
 - [x] No course or university credentials anywhere
+      - confirmed, none used or required
 - [x] Anyone whose data appears in a test was asked first
+      - N/A, no personal data of any living private individual appears
 
 No keys were ever present to find or revoke, since this project never required
 any secrets or credentials.
