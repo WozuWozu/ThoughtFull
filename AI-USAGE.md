@@ -1,6 +1,9 @@
 
 ### 1. How I used AI (35 points)
 
+Disclaimer: AI-USAGE was only made in the third week due to the public repo template being made before it was added, due to the numerous incremental updates on previous week requirements (journal and documentation)
+I only found time to add this now with information checked from both chat logs and commits rather than an incremental week by week update. Hopefully the commits speak for themselves.
+
 1. September 19, 2026, Claude AI (claude.ai)
 - Assistance with the project utilizing the already made proposal, mockup and style guide
 - It returned, with the project folders and widgets providing the foundational framework that everything else was built on.
